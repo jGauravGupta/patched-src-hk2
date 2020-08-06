@@ -31,7 +31,7 @@ import java.net.URI;
  */
 public class TypeImpl extends AnnotatedElementImpl implements Type {
 
-    private final TypeProxy<Type> sink;
+    protected final TypeProxy<Type> sink;
     private final List<MethodModel> methods = new ArrayList<MethodModel>();
     private final Set<URI> definingURIs= new HashSet<URI>();
 
